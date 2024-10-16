@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            opacity: 0; 
+            animation: fadeIn 0.5s ease forwards; 
+        }
+        section h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .placeholder {
+            background: #e2e2e2;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            header li {
+                padding: 0 10px 0 10px;
+            }
+            header #branding h1 {
+                font-size: 24px;
+            }
+            section {
+                padding: 15px;
+            }
+            section h2 {
+                font-size: 20px;
+            }
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>My Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="placeholder">
+                <p>Hello! I'm Edreigh Nisperos, a semi-introvert with a deep passion for exploring the underwater world through free diving. When I'm not diving into the depths of the ocean, I'm diving into new knowledge and skills, constantly seeking to learn and grow. Whether it's through books, courses, or hands-on experiences, I thrive on expanding my horizons and embracing new challenges. My unique blend of introspection and curiosity fuels both my personal and professional life, driving me to explore and innovate.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="placeholder">
+                <p>I am currently a second-year college student pursuing a Bachelor of Science in Information Technology (BSIT) with a major in Web Development. My coursework focuses on various aspects of web design and development, including front-end and back-end technologies, user experience (UX) design, and web application security. I am passionate about leveraging these skills to create innovative and user-friendly web solutions.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="placeholder">
+                <p>As a college student, my key responsibilities include attending classes, completing assignments, studying for exams, participating in group projects, and engaging in extracurricular activities. These experiences have helped me develop strong time management, teamwork, and problem-solving skills.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="placeholder">
+                <p>Project 1: A web application for managing personal tasks and to-dos.<br>
+                Project 2: A small e-commerce site using HTML, CSS, and JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="placeholder">
+                <p>Email: nedreigh28@gmail.com</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
